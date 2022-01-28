@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "Info": "../../components/info/info",
+    "Msg": "../../components/msg/msg",
+    "TeamItem": "../../components/teamitem/teamitem"
+  },
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#11EE96"
+}

@@ -1,0 +1,28 @@
+<view class="postItem">
+  <view class="item-header">
+    <view class="item-username">{{post.user.username}}</view>
+    <view class="item-date">{{post.date}}</view>
+  </view>
+  <view class="item-post">
+    <text class="post-title">{{post.post_title}}</text>
+    <view class="post-content">{{post.post_content}}</view>
+    <view class="bottom"></view>
+  </view>
+</view>
+<view class="fill"></view>
+<view class="remark">
+  <view class="remark-head">全部留言</view>
+  <block wx:for="{{post.reply}}" wx:key="date">
+    <view class="remark-body">
+      <view class="remark-people">{{item.username}}</view>
+      <view class="remark-content">{{item.words}}</view>
+      <view class="remark-date">{{item.date}}</view>
+    </view>
+  </block>
+</view>
+<view class="addremark">
+  <form bindsubmit="formSubmit">
+    <textarea name="words" id="" cols="30" rows="60" maxlength="500" placeholder="输入留言..." class="words" value="{{inputValue}}"></textarea>
+    <button form-type="submit">发表</button>
+  </form>
+</view>

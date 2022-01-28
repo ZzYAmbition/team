@@ -1,0 +1,3 @@
+<view class="container">
+<button bindtap="btnClick">获取Node服务器的数据</button>
+</view>

@@ -1,0 +1,4 @@
+<view class="mainprofile">
+  <ProfileItem wx:for="{{itemInfo}}" wx:key="index" imgUrl="{{item.imgUrl}}"
+  itemName="{{item.itemName}}"></ProfileItem>
+</view>

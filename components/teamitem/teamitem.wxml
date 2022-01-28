@@ -1,0 +1,15 @@
+<view class="maincontainer" bindtap="toTeamDetail">
+  <view class="header">
+    <text class="teamtitle">{{team.teamtitle}}</text>
+    <text class="date">{{team.date}}</text>
+  </view>
+  <view class="bodycon">
+    <view class="declaration">宣言和需求：{{team.declaration}}</view>
+    <view class="nums">已有人数/最大人数： {{team.teammates.length + 1}} / {{team.maxnum}}</view>
+    <view class="captain">队长：{{team.captain.class}}-{{team.captain.username}}</view>
+  </view>
+  <view class="footer">
+    <view class="type">{{team.type.tagname}}</view>
+    <view class="apply" catchtap="apply" wx:if="{{!isDisabled && !isAdd}}">申请加入队伍</view>
+  </view>
+</view>

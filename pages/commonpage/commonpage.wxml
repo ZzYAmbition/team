@@ -1,0 +1,10 @@
+<view wx:if="{{itemName == '我的信息'}}"><Info></Info></view>
+<view wx:elif="{{itemName == '我的队伍'}}">
+  <view wx:if="{{teams.length != 0}}">
+    <block wx:for="{{teams}}" wx:key="_id">
+      <TeamItem team="{{item}}"></TeamItem>
+    </block>
+  </view>
+  <view wx:else>没有更多队伍了。。。</view>
+</view>
+<view wx:elif="{{itemName == '消息'}}"><Msg msgs="{{msgs}}" bind:updatemsg="updatemsg"></Msg></view>

@@ -1,0 +1,4 @@
+/* pages/commonpage/commonpage.wxss */
+page {
+  background-color: #F1F1F1;
+}

@@ -1,0 +1,46 @@
+<view class="all">
+  <view class="content">
+  <form bindsubmit="formSubmit">
+    <view class="common">
+      <text class="cwords">队伍名称：</text><input type="text" class="cwords-input" 
+      value="{{team.teamtitle}}" name="teamtitle" disabled="{{isDisabled}}"/>
+    </view>
+    <view class="common">
+      <text class="cwords">宣言和需求：</text><textarea type="text" maxlength="50" class="cwords-input" 
+      value="{{team.declaration}}" name="declaration" disabled="{{isDisabled}}"/>
+    </view>
+    <view class="common">
+      <text class="cwords">联系方式：</text><input type="text" class="cwords-input" 
+      value="{{team.contact}}" name="contact" disabled="{{isDisabled}}" bindinput="contactinput"/>
+    </view>
+    <view class="common">
+      <text class="cwords">获奖情况：</text><input type="text" class="cwords-input" 
+      value="{{team.isaward}}" name="isaward" disabled="{{mergeFlag}}" bindinput="isawardinput"/>
+    </view>
+  </form>
+  </view>
+  <view class="members">
+    <text class="mtext">现有成员：(最大人数{{team.maxnum}})</text>
+    <view class="mcon">
+      <view class="captain">
+        <view class="type">队长</view>
+        <view class="info">{{team.captain.username}}-{{team.captain.class}}</view>
+      </view>
+      <view class="commonm" wx:if="{{team.teammates.length != 0}}">
+        <view class="type">队员</view>
+        <view class="info">
+        <view class="mem" wx:for="{{team.teammates}}" wx:key="_id">
+        {{item.username}}-{{item.class}}
+          <button bindtap="removeFromTeam" data-index="{{index}}">移出队伍</button>
+        </view>
+        </view>
+      </view>
+      <button bindtap="addMember">添加成员</button>
+    </view>
+  </view>
+  <view class="footer">
+    <view class="type">{{team.type.tagname}}</view>
+    <image src="../../assets/images/delete.png" class="delete" bindtap="deleteteam"></image>
+  </view>
+  <view class="save" bindtap="save" >保存</view>
+</view>

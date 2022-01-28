@@ -1,0 +1,63 @@
+.mask_layer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+}
+.modal_box {
+  width: 76%;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 1001;
+  background: #fafafa;
+  margin: -150px 12% 0 12%;
+  border-radius: 3px;
+}
+.title {
+  padding: 15px;
+  text-align: center;
+  background-color: gazure;
+}
+.modal-input {
+  font-size: 12px;
+}
+.modal-btn-group {
+  width: 100%;
+  margin-top: 65rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: white;
+}
+.cancel {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+.confirm {
+  width: 100%;
+  padding: 10px;
+  color: #44b549;
+  background-color: white;
+  border-left: 1px solid #d0d0d0;
+  text-align: center;
+}
+.modalMsg {
+  text-align: center;
+  margin-top: 45rpx;
+  display: block;
+}
+.modal-addtag, .modal-edittag{
+  width: 80%;
+  margin-left: 10%;
+}

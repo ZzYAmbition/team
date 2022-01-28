@@ -1,0 +1,95 @@
+page {
+  background-color: #f1f1f1;
+}
+.all {
+  margin-top: 10px;
+  width: 100%;
+}
+.content {
+  width: 100%;
+}
+.content .common {
+  display: flex;
+  margin: 5px 0;
+  width: 100%;
+}
+.common .cwords {
+  width: 100px;
+  text-align: right;
+  margin-left: 6px;
+}
+.common .cwords-input {
+  flex: 1;
+}
+.all .members {
+  margin-top: 10px;
+  width: 100%;
+  padding-left: 5px;
+  box-sizing: border-box;
+}
+.members .mcon {
+  width: 100%;
+}
+.mcon .captain {
+  width: 96%;
+  display: flex;
+  border: 1px solid grey;
+  margin-top: 8px;
+}
+.captain .type {
+  font-weight: bold;
+  width: 60px;
+  text-align: center;
+}
+.captain .info {
+  flex: 1;
+  border-left: 1px solid grey;
+  text-align: center;
+}
+.mcon .commonm {
+  width: 96%;
+  display: flex;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-left: 1px solid grey;
+}
+.commonm .type {
+  font-weight: bold;
+  width: 60px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.commonm .info {
+  flex: 1;
+  border-left: 1px solid grey;
+  text-align: center;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .type {
+  width: 100px;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin-left: 10px;
+
+}
+.footer .delete {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.save {
+  width: 60px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #11EE96;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  margin: 10px 0 0 10px;
+}

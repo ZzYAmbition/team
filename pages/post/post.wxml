@@ -1,0 +1,6 @@
+<view class="post-header">
+ <view class="addpost" bindtap="publishpost">
+  <image class="addimg" src="../../assets/images/post/edit.png"></image>
+ </view>
+</view>
+<MainPost mpostArr="{{postArr}}"></MainPost>

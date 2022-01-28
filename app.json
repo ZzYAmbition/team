@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/profile/profile",
+    "pages/post/post",
+    "pages/logs/logs",
+    "pages/commonpage/commonpage",
+    "pages/publishpost/publishpost",
+    "pages/teams/teams",
+    "pages/postdetail/postdetail",
+    "pages/edittag/edittag",
+    "pages/addteam/addteam",
+    "pages/teamdetail/teamdetail",
+    "pages/searchuser/searchuser"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/teams/teams",
+        "text": "队伍",
+        "iconPath": "./assets/images/tabbar/team.png",
+        "selectedIconPath": "./assets/images/tabbar/teamchecked.png"
+      },
+      {
+        "pagePath": "pages/post/post",
+        "text": "帖子",
+        "iconPath": "./assets/images/post/post.png",
+        "selectedIconPath": "./assets/images/post/postchecked.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "./assets/images/tabbar/me.png",
+        "selectedIconPath": "./assets/images/tabbar/mechecked.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

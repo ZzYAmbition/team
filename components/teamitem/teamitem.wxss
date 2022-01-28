@@ -1,0 +1,62 @@
+.maincontainer {
+  width: 98%;
+  font-size: 14px;
+  border: 1px solid #11EE96;
+  border-radius: 5px;
+  margin: 5px 0 5px 2px;
+}
+.header {
+  display: flex;
+  height: 20px;
+  line-height: 20px;
+  justify-content: space-between;
+}
+.header .teamtitle {
+  font-weight: bold;
+  margin-left: 5px;
+}
+.header .date {
+  font-size: 12px;
+  color: grey;
+}
+.bodycon {
+  padding-left: 5px;
+}
+.bodycon .declaration {
+  height: 60px;
+  margin-top: 10px;
+}
+.bodycon .nums {
+  font-size: 12px;
+}
+.bodycon .captain {
+  margin-top: 5px;
+  font-size: 12px;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  margin: 10px 0 5px 0;
+  justify-content: space-between;
+}
+.footer .type{
+  width: 100px;
+  height: 20px;
+  font-size: 12px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin-left: 5px;
+  text-align: center;
+  line-height: 20px;
+}
+.footer .apply {
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  line-height: 30px;
+  margin-right: 5px;
+  background-color: #11EE96;
+}

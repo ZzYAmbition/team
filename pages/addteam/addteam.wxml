@@ -1,0 +1,27 @@
+<view class="add-team">
+  <form bindsubmit="formSubmit">
+    <view class="title-con">
+      <text class="title-text">队伍名称：</text><input class="title-input" type="text" placeholder="请输入队伍名称" name="teamtitle"/>
+    </view>
+    <view class="title-con">
+      <text class="title-text">宣言和需求：</text><textarea class="title-input" placeholder="请输入队伍宣言和队伍需求" maxlength="50" name="declaration"/>
+    </view>
+    <view class="title-con">
+      <text class="title-text">最大人数：</text><input class="title-input" type="number" placeholder="请输入队伍的最大人数" name="maxnum"/>
+    </view>
+    <view class="title-con">
+      <text class="title-text">联系方式：</text><input class="title-input" placeholder="队长联系方式" maxlength="50" name="contact"/>
+    </view>
+    <view class="title-con">
+      <text class="title-text">获奖情况：</text><input class="title-input" type="text" placeholder="请输入获奖情况" name="isaward"/>
+    </view>
+    <view class="selected-tag">
+      <view class="tags" wx:if="{{selectedTags}}">{{selectedTags.tagname}}</view>
+      <picker mode="selector" class="type-picker" bindchange="bindPickerChange" value="{{index}}" range="{{tags}}"
+        range-key="tagname">
+        <view class="view-select-tag">选择分类</view>
+      </picker>
+    </view>
+    <button form-type="submit" class="construct">创建</button>
+  </form>
+</view>

@@ -1,0 +1,21 @@
+page {
+  background-color: #F1F1F1;
+}
+.post-header {
+  position: relative;
+  width: 100%;
+  height: 49px;
+  background-color: #11EE96;
+}
+.addpost {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+}
+.addpost .addimg {
+  width: 24px;
+  height: 24px;
+}

@@ -1,0 +1,22 @@
+<!--components/info/info.wxml-->
+<form bindsubmit="formSubmit" class="info-form">
+  <view class="name profile">
+    <text class="protext">名字</text>
+    <input type="text" name="username" value="{{info.username}}" class="proinput" maxlength="10"/>
+  </view>
+  <view class="pclass profile">
+    <text class="protext">班级</text>
+    <input type="text" name="class" value="{{info.class}}" class="proinput" maxlength="10"/>
+  </view>
+  <view class="school profile">
+    <text class="protext">学校</text>
+    <input type="text" name="school" value="{{info.school}}" class="proinput" maxlength="20"/>
+  </view>
+  <view class="resume profile">
+    <text class="protext">简介</text>
+    <textarea name="resume" id="resume" value="{{info.resume}}" cols="10" rows="20" maxLength="300" class="proinput" placeholder="个人简介"></textarea>
+  </view>
+  <view class="btn">
+    <button form-type="submit">保存</button>
+  </view>
+</form>

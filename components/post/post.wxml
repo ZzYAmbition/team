@@ -1,0 +1,19 @@
+<view class="postItem" bindtap="toDetail">
+  <view class="item-header">
+    <view class="item-username">{{postItem.user.username}}</view>
+    <view class="item-date">{{postItem.date}}</view>
+    <view wx:if="{{postItem.user.openid == myopenid}}" class="del" catchtap="delClick">
+      <image class="del-img" src="../../assets/images/delete.png" />
+    </view>
+  </view>
+  <view class="item-post">
+    <text class="post-title">{{postItem.post_title}}</text>
+    <view class="post-content">{{postItem.post_content}}</view>
+  </view>
+  <view class="item-remark">
+  <view class="remarkcon">
+    <image src="../../assets/images/post/remark.png" class="remarkimg"></image>
+    <text class="numsremark">{{postItem.reply.length}}留言</text>
+  </view>
+  </view>
+</view>

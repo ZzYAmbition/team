@@ -1,0 +1,13 @@
+<view wx:if='{{showModal}}'>
+  <view class='mask_layer' bindtap='modal_click_Hidden' />
+  <view class='modal_box'>
+    <view class="title">{{title}}</view>
+    <view class='modal-input'>
+			<input type="text" class="modal-addtag" placeholder="1~20个字符" name="addtag" bindinput="getNewTag" maxlength="40"></input>
+    </view>
+    <view class='modal-btn-group'>
+      <view bindtap='cancel' class='cancel'>取消</view>
+      <view bindtap='confirm' class='confirm'>确定</view>
+    </view>
+  </view>
+</view>

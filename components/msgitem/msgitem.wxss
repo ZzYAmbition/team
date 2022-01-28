@@ -1,0 +1,31 @@
+.msgitem {
+  display: flex;
+  align-items: center;
+  margin: 3px 0 3px 2px;
+  width: 98%;
+  height: 29px;
+  line-height: 29px;
+  background-color: #11ee96;
+  border-radius: 8px;
+  font-size: 12px;
+  color: white;
+}
+.content {
+  width: 190px;
+  margin-left: 2px;
+}
+.btn {
+  width: 40px;
+  height: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 3px;
+  text-align: center;
+  border: 1px solid white;
+}
+.agree {
+  margin-left: 25px;
+}
+.refuse {
+  margin-left: 5px;
+}

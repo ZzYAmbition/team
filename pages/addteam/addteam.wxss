@@ -1,0 +1,42 @@
+.add-team {
+  width: 100%;
+}
+.title-con {
+  width: 100%;
+  display: flex;
+  margin: 5px 0;
+}
+.title-con .title-text{
+  width: 100px;
+  text-align: right;
+  margin-left: 6px;
+}
+.title-con .title-input {
+  flex: 1;
+}
+.selected-tag {
+  display: flex;
+  margin: 40px 0 0 0;
+}
+.tags {
+  font-size: 12px;
+  width: 120px;
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #cdcdcd;
+  margin: 0 6px;
+}
+.view-select-tag {
+  width: 80px;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid #cdcdcd;
+  font-size: 12px;
+  color: #515151;
+  text-align: center;
+  line-height: 20px;
+}
+.construct {
+  margin-top: 40px;
+}

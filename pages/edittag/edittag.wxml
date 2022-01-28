@@ -1,0 +1,10 @@
+<view class="add-tag">
+	<image src="../../assets/images/addTag.png" class="add" catchtap="toAddTag"></image>
+</view>
+<view class="edittag-container" wx:for="{{tags}}" wx:key="_id" data-index="{{index}}">
+	<image src="../../assets/images/tag.png" class="tagimg"></image>
+	<view class="tag">{{item.tagname}}</view>
+	<image src="../../assets/images/delete.png" class="delete" catchtap="deleteTag" data-index="{{index}}"></image>
+</view>
+<modal class="modal" bind:confirm="confirm" bind:cancel="cancel" showModal="{{showModal}}" wx:if="{{showModal}}">
+</modal>

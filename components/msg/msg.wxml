@@ -1,0 +1,8 @@
+<view wx:if="{{msgs.length == 0}}">
+  <text>没有更多消息</text>
+</view>
+<view wx:else>
+  <block wx:for="{{msgs}}">
+  <MsgItem applymsg="{{item}}" bind:updatemsg="updatemsg"></MsgItem>
+  </block>
+</view>

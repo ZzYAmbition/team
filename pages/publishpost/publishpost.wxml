@@ -1,0 +1,15 @@
+<form bindsubmit="formSubmit" class="post-form">
+  <view class="btncontainer">
+    <button form-type="submit" class="add-post">
+      <image class="save-post" src="../../assets/images/send.png" />
+    </button>
+  </view>
+  <view class="mainpost">
+    <view class="title">
+      <input type="text" placeholder="请输入标题" style="font-weight: bold" name="post_title"/>
+    </view>
+    <view class="content">
+      <textarea name="" id="" cols="30" rows="20" placeholder="请输入内容" name="post_content"></textarea>
+    </view>
+  </view>
+</form>

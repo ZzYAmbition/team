@@ -1,0 +1,37 @@
+page {
+  background-color: #f1f1f1;
+}
+.add-tag {
+  width: 100%;
+  height: 30px;
+  background-color: #11EE96;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.add-tag .add {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.edittag-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background: #fff;
+  margin: 3px 0;
+}
+.edittag-container .tagimg {
+  margin-left: 5px;
+  width: 20px;
+  height: 20px;
+}
+.edittag-container .tag {
+  margin-left: 10px;
+}
+.edittag-container .delete {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+}

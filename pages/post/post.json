@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "MainPost": "../../components/mainpost/mainpost"
+  },
+  "navigationBarTitleText": "帖子",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#11EE96"
+}

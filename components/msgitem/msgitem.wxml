@@ -1,0 +1,5 @@
+<view class="msgitem">
+  <text class="content">{{applymsg.applicant.username}}申请加入《{{applymsg.team.teamtitle}}》</text>
+  <view class="agree btn" catchtap="agree">同意</view>
+  <view class="refuse btn" catchtap="refuse">拒绝</view>
+</view>

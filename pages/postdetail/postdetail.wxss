@@ -1,0 +1,77 @@
+page {
+  background-color: #fff;
+}
+.postItem {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 12px;
+  background-color: #fff;
+  margin: 10px 0 0 0;
+  padding: 0 10px;
+}
+.item-header,
+.item-post
+{
+  width: 100%;
+}
+.item-header {
+  position: relative;
+}
+.item-username {
+  font-weight: 700;
+}
+.item-date {
+  font-size: 10px;
+}
+.item-post .post-title {
+  line-height: 36px;
+  font-weight: 700;
+}
+.post-content {
+  width: 100%;
+}
+.bottom {
+  width: 100%;
+  height: 10px;
+  background-color: #fff;
+}
+.remark {
+  box-sizing: border-box;
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  padding: 0 10px;
+  font-size: 12px;
+  overflow: scroll;
+}
+.remark-head {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid black;
+}
+.remark-body {
+  line-height: 24px;
+  border-bottom: 1px solid black;
+}
+.addremark {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  box-shadow: 0 -5px 5px #f1f1f1;
+}
+.fill {
+  width: 100%;
+  height: 5px;
+  background-color: #f1f1f1;
+}
+.words {
+  font-size: 12px;
+  padding: 0 0 0 10px;
+  overflow-y: scroll;
+}

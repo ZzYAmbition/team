@@ -1,0 +1,32 @@
+.post-form {
+  font-size: 14px;
+  width: 100%;
+}
+.btncontainer{
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid grey;
+}
+.btncontainer .add-post{
+  width: 30px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0);
+}
+.add-post .save-post {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+.mainpost {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 10px;
+}
+.mainpost .title {
+  height: 30px;
+  margin-top: 5px;
+  border-bottom: 1px solid grey;
+}
+.mainpost .content {
+  margin-top: 10px;
+}

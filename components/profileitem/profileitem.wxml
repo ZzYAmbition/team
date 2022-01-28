@@ -1,0 +1,6 @@
+<view class="profile-item" bindtap="itemClick">
+  <view class="item-common">
+    <image src="{{imgUrl}}" class="item-img"></image>
+    <text class="item-name">{{itemName}}</text>
+  </view>
+</view>

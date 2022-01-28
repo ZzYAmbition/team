@@ -1,0 +1,21 @@
+<view class="team-header">
+  <view class="addTeam" bindtap="addTeam">
+    <image class="addimg" src="../../assets/images/post/edit.png"></image>
+  </view>
+  <view class="tagscontainer" bindtap="changeState">
+    <view class="tagtop">
+      <text class="tagname">{{tag}}</text>
+      <image src="../../assets/images/downarrow-white.png" class="downarrow"></image>
+    </view>
+    <view class="select-list" wx:if="{{isShow}}">
+      <view class="tag-list">
+        <view wx:for="{{tags}}" wx:key="id" class="tagItem" 
+        data-index="{{index}}" catchtap="changeTag">{{item.tagname}}</view>
+      </view>
+      <view class="editTag" catchtap="toEditTag">编辑分类</view>
+    </view>
+  </view>
+</view>
+<block wx:for="{{teams}}" wx:key="_id">
+  <teamitem team="{{item}}"></teamitem>
+</block>

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "teamitem": "../../components/teamitem/teamitem"
+  },
+  "navigationBarTitleText": "队伍",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#11EE96"
+}

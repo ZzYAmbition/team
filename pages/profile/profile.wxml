@@ -1,0 +1,18 @@
+<view class="mainpage">
+  <view class="header-profile">
+    <view wx:if="{{isLogin}}" class="profile-container">
+      <image src="{{userInfo.avatarUrl}}"></image>
+      <text>{{userInfo.username}}</text>
+    </view>
+    <view wx:else class="login-container">
+      <view class="login">
+        <!-- <button class="bottom" size="mini" open-type="getUserInfo" lang="zh_CN"
+          bindgetuserinfo="bindGetUserInfo">点我登录</button> -->
+        <button class="bottom" size="mini" bindtap="getUserProfile">点我登录</button>
+      </view>
+    </view>
+  </view>
+  <view class="main-profile">
+    <MainProfile itemInfo="{{profileItemInfo}}"></MainProfile>
+  </view>
+</view>

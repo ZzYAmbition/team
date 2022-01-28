@@ -1,0 +1,63 @@
+page {
+  background-color: #f1f1f1;
+}
+
+.team-header {
+  position: relative;
+  width: 100%;
+  height: 49px;
+  background-color: #11EE96;
+  color: #fff;
+}
+
+.addTeam {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+}
+
+.addTeam .addimg {
+  width: 24px;
+  height: 24px;
+}
+
+.tagscontainer {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  transform: translateX(-50%);
+  width: auto;
+  height: 49px;
+  line-height: 49px;
+  text-align: center;
+}
+
+.tagscontainer .downarrow {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.tagscontainer .select-list {
+  position: absolute;
+  left: 50%;
+  top: 49px;
+  transform: translateX(-50%);
+  font-size: 14px;
+  width: 100px;
+  line-height: 30px;
+  color: grey;
+  background-color: #fff;
+}
+.select-list .tag-list {
+  height: 93px;
+  overflow: scroll;
+}
+.tag-list .tagItem {
+  border-bottom: 1px solid grey;
+}
+.select-list .editTag {
+  border-bottom: 1px solid grey;
+}

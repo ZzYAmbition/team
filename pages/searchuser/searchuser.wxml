@@ -1,0 +1,14 @@
+<view class="header">
+<view class="s">
+  <input type="text" placeholder="请输入用户名字" name="search" class="sinput"
+  confirm-type="search" bindconfirm="toSearch" bindinput="input"/>
+</view>
+</view>
+<view class="tips" wx:if="{{users.length === 0}}">没有该用户</view>
+<view wx:else class="usercon">
+  <view wx:for="{{users}}" wx:key="_id" class="u">
+    <image src="{{item.avatarUrl}}" class="pro"></image>
+    <text class="upro">{{item.username + '-' + item.class}}</text>
+    <view class="btn" bindtap="adduser" data-index="{{index}}">添加</view>
+  </view>
+</view>

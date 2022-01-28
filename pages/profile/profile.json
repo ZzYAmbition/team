@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "MainProfile": "../../components/mainprofile/mainprofile"
+  },
+  "navigationBarTitleText": "我的",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#11EE96"
+}
